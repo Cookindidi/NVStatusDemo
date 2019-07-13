@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="设备id："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_device_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="机器版本号："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_robot_version"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="ROS ip地址："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_nv_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="ROS HostName："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_nv_hostname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="急停开关状态："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_switch_stop_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="充电器类型："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_charge_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="充电状态："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_charge_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="导航状态："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_nv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="重定位状态："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_reloc_nv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="前方最近障碍物距离："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_laser_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="给定点名称导航结果："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_nv_point_stauts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="给定点名称导航充电结果："
+            android:gravity="right"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_nv_point_charge_stauts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:textSize="20sp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="机器人按坐标移动结果："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_move_stauts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="创建ROS HostName状态："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_nv_setting_hostname_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="导航主机创建WIFI名："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_nv_create_wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="导航配置文件："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_location_cfg_stauts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="已配置坐标点："
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_location_cfg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="导航主机连接WIFI"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="SSID："/>
+                <EditText
+                    android:id="@+id/ed_nv_wifi_ssid"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="密码："/>
+                <EditText
+                    android:id="@+id/ed_nv_wifi_pwd"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_nv_wifi_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="连接"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="设置导航主机HostName："/>
+
+            <EditText
+                android:id="@+id/ed_setting_nv_hostname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_setting_nv_hostname"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="设置"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="导航坐标："/>
+
+            <EditText
+                android:id="@+id/ed_nv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_start_navigation"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="开始导航"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(坐标格式：x,y,z)"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="导航并充电坐标："/>
+
+            <EditText
+                android:id="@+id/ed_nv_charge"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_nv_charge"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="开始导航"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(坐标格式：x,y,z)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="给定目标点导航："/>
+
+            <EditText
+                android:id="@+id/ed_point_nv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_point_nv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="开始导航"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(目标点格式：办公室)"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="给定目标点导航并充电："/>
+
+            <EditText
+                android:id="@+id/ed_point_nv_charge"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_point_nv_charge"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="开始导航"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(目标点格式：充电桩)"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="机器人移动参数："/>
+
+            <EditText
+                android:id="@+id/ed_move_value"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_start_move"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="开始移动"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(参数格式：distance,angle 或 distance,angle,speed)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="指定坐标重定位："/>
+
+            <EditText
+                android:id="@+id/ed_relocal_nv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_start_relocal_nv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="重定位"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(参数格式：distance,angle 或 distance,angle,speed)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_relocal_nv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全局重定位"
+                    android:textSize="18dp"/>
+                <Button
+                    android:id="@+id/btn_cancel_nv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消导航"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btn_connect_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直接对接充电桩"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btn_cancel_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消充电"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btn_reboot_nv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重启导航主机"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_search_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查询导航主机ip"
+                    android:textSize="18dp"/>
+                <Button
+                    android:id="@+id/btn_search_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查询版本"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btn_shut_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关机断电"
+                    android:textSize="18dp"/>
+                <Button
+                    android:id="@+id/btn_open_ros_bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="打开rosbag"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btn_close_ros_bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭rosbag"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_nv_created_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="导航主机创建WIFI"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btn_nv_host_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取 ROS HostName"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_refresh_all_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="刷新机器人状态"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
