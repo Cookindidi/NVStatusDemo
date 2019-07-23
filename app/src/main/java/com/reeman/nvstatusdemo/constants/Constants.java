@@ -5,4 +5,5 @@ package com.reeman.nvstatusdemo.constants;
  */
 public class Constants {
     public static String nav_coordinate = "/reeman/data/";
+    //3399测试
 }
